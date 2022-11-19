@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952161745346",
+    "project_id": "android-sns-fab5f",
+    "storage_bucket": "android-sns-fab5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952161745346:android:126a970145fe9cab1ffe5b",
+        "android_client_info": {
+          "package_name": "com.example.android_sns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952161745346-pd77r57r0u0an7talv199cgm6esqokrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHunkD1bQTPiR4dGfOLc1v9_l9vDjWtpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952161745346-pd77r57r0u0an7talv199cgm6esqokrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

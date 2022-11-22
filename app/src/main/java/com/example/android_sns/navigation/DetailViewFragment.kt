@@ -1,5 +1,6 @@
 package com.example.android_sns.navigation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -92,6 +93,21 @@ class DetailViewFragment : Fragment() {
             }else{
                 // 좋아요 버튼 클릭 안한 상태
                 viewholder.detailviewitem_favorite_imageview.setImageResource(R.drawable.ic_favorite_border)
+            }
+
+            // 프로필 이미지 클릭 시 상대방 유저 정보로 이동
+            viewholder.detailviewitem_profile_image.setOnClickListener{
+                var fragment = UserFragment()
+                var bundle = Bundle()
+                bundle.putString("destinationUid", contentDTOs[position].uid)
+                bundle.putString("userId", contentDTOs[position].userId)
+                fragment.arguments = bundle
+                activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.main_content,fragment)?.commit()
+            }
+            viewholder.detailviewitem_comment_imageview.setOnClickListener { v ->
+                var intent = Intent(v.context,CommentActivity::class.java)
+                intent.putExtra("contentUid",contentUidList[position])
+                startActivity(intent)
             }
         }
 
